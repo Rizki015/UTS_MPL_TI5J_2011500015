@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.biodata.hasil">
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BIODATA"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAMA " />
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM " />
+        <EditText
+            android:id="@+id/etNIM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="JURUSAN " />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MI" />
+
+            <RadioButton
+                android:id="@+id/rdSI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SI" />
+
+            <RadioButton
+                android:id="@+id/rdTI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TI" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="323dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:text="HOBI" />
+
+
+        <CheckBox
+            android:id="@+id/cbMakan"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:text="Makan" />
+
+        <CheckBox
+            android:id="@+id/cbTidur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidur" />
+
+        <CheckBox
+            android:id="@+id/cbBelajar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belajar" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnTampil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btnlogin"
+            android:text="Tampil"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/Abu">
+        </Button>
+    </TableRow>
+    <TextView
+        android:id="@+id/tvtampil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TextView>
+</TableLayout>

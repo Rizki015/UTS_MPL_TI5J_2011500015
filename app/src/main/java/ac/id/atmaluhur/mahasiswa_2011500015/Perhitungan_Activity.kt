@@ -5,9 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 
 
 class Perhitungan_Activity : AppCompatActivity() {
+
+    var pnjg : EditText? = null
+    var lebar : EditText? = null
+    var Tvhasil : TextView? = null
+    var i : Intent? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perhitungan)
@@ -22,7 +29,7 @@ class Perhitungan_Activity : AppCompatActivity() {
             var tvhasil : Int? = null
 
             var hasil = etpanjang.toInt() * etlebar.toInt()
-             tvhasil.toString()
+             Tvhasil.text:tvhasil.toString()
 
         }
         val btnkembali = findViewById<Button>(R.id.btnKembali)

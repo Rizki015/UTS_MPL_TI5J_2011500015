@@ -5,11 +5,11 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@id/nav_Menu">
 
-    <activity
+    <fragment
         android:id="@+id/nav_home"
-        android:name="ac.id.atmaluhur.mahasiswa_2011500015.Perhitungan_Activity"
+        android:name="ac.id.atmaluhur.mahasiswa_2011500015.ui.Perhitungan.HomeFragment"
         android:label="UTSMPL"
-        tools:layout="@layout/activity_perhitungan" />
+        tools:layout="@layout/fragment_perhitungan" />
 
     <fragment
         android:id="@+id/nav_gallery"

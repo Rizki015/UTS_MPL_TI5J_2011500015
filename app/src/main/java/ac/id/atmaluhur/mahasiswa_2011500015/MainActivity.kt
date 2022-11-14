@@ -1,29 +1,42 @@
 package ac.id.atmaluhur.mahasiswa_2011500015
 
-import ac.id.atmaluhur.mahasiswa_2011500015.UTSMPL
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
+import android.view.View
 import android.widget.*
 
 
 class MainActivity : AppCompatActivity() {
+    var etUsr: EditText? = null
+    var etPass: EditText? = null
+    var lgon: Button? = null
+    var i: Intent? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val etUsernmae = findViewById<EditText>(R.id.etUsername)
-        val etPassword = findViewById<EditText>(R.id.etPassword)
-        val btnProses = findViewById<Button>(R.id.btnLogin)
+        etUsr = findViewById<View>(R.id.etUsername) as EditText
+        etPass = findViewById<View>(R.id.etPassword) as EditText
+        lgon = findViewById<View>(R.id.btnLogin) as Button
 
-        btnProses.setOnClickListener{
-            if("${etUsernmae.text}".isNotEmpty() &&"${etPassword.text}".isNotEmpty()){
-                val i =Intent(this@MainActivity,UTSMPL ::class.java)
-                i.putExtra("Username", "${etUsernmae.text}")
-                i.putExtra("Password", "${etPassword.text}")
+        fun masuk(view: View?) {
+            val sun = etUsr!!.toString()
+            val sp = etPass!!.toString()
+            if (sun == "Rizki Pratama" && sp == "Rizki652") {
+                val i = Intent(this@MainActivity, UTSMPL::class.java)
                 startActivity(i)
-            }else
-                Toast.makeText(this@MainActivity, "Username atau Password belum diisi", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(
+                    applicationContext, "Username atau password salah",
+                    Toast.LENGTH_SHORT
+                ).show()
+                etUsr!!.setText("")
+                etPass!!.setText("")
+            }
         }
     }
 }
+
+

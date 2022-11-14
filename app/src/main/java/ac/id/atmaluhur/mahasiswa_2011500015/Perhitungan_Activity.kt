@@ -29,13 +29,13 @@ class Perhitungan_Activity : AppCompatActivity() {
             var tvhasil : Int? = null
 
             var hasil = etpanjang.toInt() * etlebar.toInt()
-             Tvhasil.text:tvhasil.toString()
+            tvhasil.toString()
 
         }
         val btnkembali = findViewById<Button>(R.id.btnKembali)
 
         btnkembali.setOnClickListener{
-            val i = Intent(this@Perhitungan_Activity, UTSMPL::class.java)
+            val i = Intent(this@Perhitungan_Activity, MainActivity::class.java)
             startActivity(i)
         }
     }

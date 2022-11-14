@@ -27,7 +27,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".UTSMPL"
+            android:name=".MainActivity"
             android:exported="false"
             android:label="@string/title_activity_utsmpl"
             android:theme="@style/Theme.UTS_MPL_TI5J_2011500015.NoActionBar">
@@ -36,7 +36,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

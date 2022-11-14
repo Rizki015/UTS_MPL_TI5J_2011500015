@@ -5,23 +5,23 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@id/nav_Menu">
 
-    <fragment
+    <activity
         android:id="@+id/nav_home"
-        android:name="ac.id.atmaluhur.mahasiswa_2011500015.ui.Perhitungan.HomeFragment"
+        android:name="ac.id.atmaluhur.mahasiswa_2011500015.Perhitungan_Activity"
         android:label="UTSMPL"
-        tools:layout="@layout/fragment_perhitungan" />
+        tools:layout="@layout/activity_perhitungan" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_gallery"
-        android:name="ac.id.atmaluhur.mahasiswa_2011500015.ui.biodata.GalleryFragment"
+        android:name="ac.id.atmaluhur.mahasiswa_2011500015.BiodataActivity"
         android:label="UTSMPL"
-        tools:layout="@layout/fragment_biodata" />
+        tools:layout="@layout/activity_biodata" />
 
     <activity
         android:id="@+id/nav_slideshow"
-        android:name="ac.id.atmaluhur.mahasiswa_2011500015.MainActivity"
+        android:name="ac.id.atmaluhur.mahasiswa_2011500015.LoginActivity"
         android:label="UTSMPL"
-        tools:layout="@layout/activity_main" />
+        tools:layout="@layout/activity_login" />
 
     <fragment
         android:id="@+id/nav_Menu"
